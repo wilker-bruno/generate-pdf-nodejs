@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .content {
+        margin-top: 20px;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Gerando PDF com View Engines</h1>
+    </div>
+
+    <div class="content">
+      <p>
+        Estamos utilizando a view engine EJS neste documento e estilizando com
+        CSS. Podemos fazer as coisas usuais que fazemos com HTML e CSS, o
+        diferencial é que podemos incluir variáveis, laços de repetição,
+        condicionais. Confira o texto a seguir no PDF e como esta no código.
+      </p>
+    </div>
+
+    <p>Nome: <%= nameInTheTemplate %></p>
+    <p>Universidade: <%= universityInTheTemplate %></p>
+    <p>Curso: <%= courseInTheTemplate %></p>
+  </body>
+</html>
